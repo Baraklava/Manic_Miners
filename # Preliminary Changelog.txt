@@ -1,0 +1,68 @@
+General:
+- Added quick hotkeys!
+	- Q: Quick key. If a wall is clicked, mark it for drilling. If rubble, mark it for shoveling. If ground, command a Power Path there
+	- E: Explode/Electric. If a wall is clicked, send a Dynamite there. If any floor tile, it will order an Electric Fence to be placed there (in the future builds)
+	- R: Reinforce. Will be implemented when Reinforcing becomes a thing.
+- Enabled priorities! They should work completely and you can toggle them on and off. Let me know if you encounter issues
+	- Note: They will still always shovel rubble first if they stand on it. This will possibly change.
+
+Buildings:
+- Added 6 new buildings!
+	- Docks: Place it by water and it will...flex?
+	- Upgrade Station: Will do fancy animations for now
+	- Ore Refinery: If you have this, miners will carry their ore there and make Studs!
+	- Geological Center: Does nothing. Only uses 1 "Base tile" now (Thanks Batman for the suggestion!)
+	- Mining Laser: Standing there, menancingly
+	- Super Teleport: Not much action yet
+- Added Idle and Action animations to buildings
+- Added "Animation test" button to Right Ctrl, use it to see a cool animation!
+- Added Power Paths System: It is very complex under the hood, so let me know if you encounter any issues.
+- Enabled Power On/Off buttons
+- Added building requirement holograms
+- Added Miner teleport effects
+
+
+Miners/AI:
+- Made rotation smooth instead of instant.
+- Tasks are now only accepted if miners can reach them
+- Picking up stuff is only automatic if they can reach a dropoff point. (They need the barriers to build anyway)
+- Navigation and task system completely overhauled
+- Selecting a miner now orients them towards your camera
+
+Resources:
+- Random rotation of resource when spawning from walls
+- Dynamite now gets "recycled" if destroyed instead of simply forgotten
+- Dynamite now gives off a screen shake
+- Dynamite now only spawns reachable positions (contrary to drilling that can be queued wherever)
+- Dynamite doesn't roll away from walls anymore
+
+Interface:
+- Added temporary options panel, but buttons are disabled so far.
+
+Materials:
+- All brick pieces now have a slightly matte surface to look more realistic.
+
+Level Editor:
+- Expanded Resource cheat panel to work with individual resources
+- Added "Resource Drain" to set all resources to zero
+
+Data handling:
+- Updated building's Power Paths to be specified by Integers, not Vectors. If you encounter issues with Building Power Paths when loading a map you've done previously, let me know.
+
+
+Details:
+- Changed Support Station's air vents to air intakes, as they should be
+- Added effects to the Teleport Pad
+- Building sounds are now only active when the building is powered
+
+Bugfixes:
+- Fixed some arrow pointers getting left behind when clicking miners/buildings
+- Fixed Buildings menu hotkey not resetting Player State
+
+
+Notes and bugs:
+- Mining Laser is placable without being next to a Power Path
+- Dispensing crystals does not power down buildings (will integrate a "power lock" into the priorities so that crystals can steal power from some buildings, but not others)
+- Teleporting miners can go over the limit if you spam
+- Power paths are forced to "quick update" right now, but will have an option for slow mode in the real update (from the demo I showed you last week)
+- Buildings still have no collisions nor foundations. The Teleport Pad will look like it teleports miners at the wrong height.
