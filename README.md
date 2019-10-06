@@ -5,6 +5,8 @@ Manic Miners is a Rock Raiders remake done in Unreal Engine. Play it for free ri
 
 - The game is programmed by one person. Please respect that implementations (however easy they are to implement) might take time.
 
+- There are two types of builds: "Major update builds", where all bugs should be fixed, and "Experimental builds" which will probably have bugs as they are largely untested. This page is for *Experimental builds*. For the major update builds, see these links: https://trello.com/c/I6FQo76V/61-download-links (and please join the Discord to easier report bugs!)
+
 
 - The game is far from feature complete. You will be missing stuff like vehicles and monsters, but the miners are very functional, as well as building construction. It indubitably has some bugs, but not more than the original, and at this point I need your help to find them!
 
