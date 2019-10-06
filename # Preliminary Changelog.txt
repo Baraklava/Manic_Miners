@@ -28,6 +28,8 @@ Miners/AI:
 - Picking up stuff is only automatic if they can reach a dropoff point. (They need the barriers to build anyway)
 - Navigation and task system completely overhauled
 - Selecting a miner now orients them towards your camera
+- Animation: Teleport
+- Animation: Teleport up
 
 Resources:
 - Random rotation of resource when spawning from walls
@@ -35,6 +37,10 @@ Resources:
 - Dynamite now gives off a screen shake
 - Dynamite now only spawns reachable positions (contrary to drilling that can be queued wherever)
 - Dynamite doesn't roll away from walls anymore
+- Dynamite marker now properly stays until the wall is blasted
+
+World:
+- Rolling rocks and dust effects when drilling a wall
 
 Interface:
 - Added temporary options panel, but buttons are disabled so far.
