@@ -1,5 +1,5 @@
 # Manic_Miners
-Manic Miners is a Rock Raiders remake done in Unreal Engine. Play it for free right here, right now!
+Manic Miners is an in-progress complete Rock Raiders remake done in Unreal Engine. Play it for free right here, right now!
 
 **If you have played the original Rock Raiders game and just want to jump right in without reading the project backstory and explanations, here are some quick notes:**
 
