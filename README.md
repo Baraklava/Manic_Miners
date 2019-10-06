@@ -3,7 +3,7 @@ Manic Miners is an in-progress complete Rock Raiders remake done in Unreal Engin
 
 **If you have played the original Rock Raiders game and just want to jump right in without reading the project backstory and explanations, here are some quick notes:**
 
-- The game is programmed by one person. Please respect that implementations (however easy they are to implement) might take time.
+- The game is programmed by one person, Baraklava. Please respect that implementations, however easy they are to implement, might take time.
 
 - There are two types of builds: "Major update builds", where all bugs should be fixed, and "Experimental builds" which will probably have bugs as they are largely untested. This page is for *Experimental builds*. For the major update builds, see these links: https://trello.com/c/I6FQo76V/61-download-links . To report bugs in this build, [join my Discord](https://discord.gg/85k8JHz)!
 
