@@ -1,3 +1,5 @@
+Author's note: Currently an issue with Github replaces the "line endings" makes the Levels not load properly. As soon as this is fixed ,probably on my end, I will keep updating this regularly. In the meantime, join the Discord for the latest builds!
+
 # Manic_Miners
 Manic Miners is an in-progress complete Rock Raiders remake done in Unreal Engine. Play it for free right here, right now!
 
