@@ -1,1 +1,3 @@
-*.dat crlf
+* text eol=crlf
+
+*.dat text
