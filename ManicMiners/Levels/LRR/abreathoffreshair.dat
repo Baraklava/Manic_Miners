@@ -1,11 +1,14 @@
 info{
 rowcount:40
 colcount:40
-camerapos:Translation: X=2434.808 Y=7611.098 Z=324.000 Rotation: P=9.418708 Y=-59.718132 R=0.000001 Scale X=1.000 Y=1.000 Z=1.000
+camerapos:Translation: X=2209.902 Y=7631.105 Z=364.051 Rotation: P=53.516899 Y=-28.918200 R=0.000000 Scale X=1.000 Y=1.000 Z=1.000
 cameraangle:0,45,0
 biome:ice
-creator:DDI
-oxygen:12000/12000
+creator:Baraklava
+oxygen:6000/6000
+levelname:A breath of fresh air
+camerazoom:1200.0
+erosioninitialwaittime:10
 }
 tiles{
 38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,
@@ -183,17 +186,23 @@ buildings{
 BuildingToolStore_C
 Translation: X=2550.000 Y=7650.000 Z=324.000 Rotation: P=0.000000 Y=0.000000 R=0.000000 Scale X=1.000 Y=1.000 Z=1.000
 Level=1
-Teleport=False
-Health=100.0
-Powerpaths=X=16.000 Y=1.000 Z=0.000/X=16.000 Y=0.000 Z=0.000/
+Teleport=True
+Health=MAX
+Powerpaths=X=16 Y=1 Z=0/X=16 Y=0 Z=0/
 }
 monsters{
 }
 monsterfrequency{
 }
 landslidefrequency{
+40:10,29/7,29/14,26/17,25/16,24/18,24/17,13/12,15/12,16/12,17/14,12/15,12/24,18/24,17/25,16/21,11/20,11/11,21/5,26/5,12/6,17/7,9/15,5/17,5/27,21/27,22/27,23/26,24/25,25/20,25/22,26/23,26/
 }
 lavaspread{
 }
 miners{
+}
+briefing{
+OK, Cadet - this is a tough mission. The air in the excavated caverns is being quickly used up.  We must urgently construct a Support Station to supply more air.  Use the Tool Store to transport down some more Miners to assist you in building the Support Station.
+
+Warning: The more Miners you transport down to help, the faster your air supply will run out!
 }

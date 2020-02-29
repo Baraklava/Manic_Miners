@@ -1,9 +1,0 @@
-1. If the game crashes with a FATAL ERROR on startup, 
-   your antivirus is blocking it. Add an exception or hope
-   that it realises the game is safe and try again.
-
-2. GitHub ruins the level data files. You therefore have to:
-	- Unzip Levels.zip
-	- Place all of the contents in /ManicMiners/Levels
-
-3. That's it, you're good to go!

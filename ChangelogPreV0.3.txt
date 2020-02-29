@@ -1,0 +1,483 @@
+-----Manic Miners, Unnamed major update 3
+
+This is the pre-builds of a MAJOR update.
+
+It is NOT recommended that you migrate your settings as
+there is so much changing in this update.
+
+
+CHANGELOG:
+
+Changelog V0.2.7->0.3.0
+
+Important changes:
+- Vehicles are now in the game! And also lasers!
+- ALL button hotkeys are now customizable through the Controls menu! Just click "Custom keybindings"
+- Miners can train and eat sandwiches
+- Your saved settings are now GLOBAL. This does NOT include maps but you won't have to move settings between builds.
+	Please, make sure to backup your maps!
+- Added 6 new levels
+
+Vehicles:
+- Vehicles have been added to the game!
+	- Hover Scout: An incredibly quick transport vehicle.
+		- Use the new Jump feature to leap across impassable terrain!
+		- Speed across caverns!
+		- Requires no training
+	- Small Digger: A quick but weak drilling vehicle. 
+	- Small Transport Truck: A quick vehicle used to collect and distribute resources!
+				 It can not transport Dynamite or Barriers.
+	- Small Mobile Laser Cutter: A small vehicle carrying a laser. Double click on it
+				     to use it!
+	- Rapid Rider: A small catamaran that can carry resources over water. Will
+			automatically collect Crystals that have fallen into water.
+	- Tunnel Scout: A small helicopter that can fly over any terrain. Upgrade it to
+			give it drilling capabilities.
+	
+	- Loader Dozer: Master of landslides. Clears rubble and reinforces walls. Does not
+			take damage from landslides.
+	- Large Mobile Laser Cutter: A tough vehicle outfitted with two high-damage lasers. 
+
+	- Granite Grinder: A walking mech-like vehicle with good drilling capabilities and
+			   a pretty high speed. It takes no damage from landslides.
+	- Chrome Chrusher: The strongest drilling vehicle that exists. It is slower than the
+			   Granite Grinder. It also has a weaker laser to defend against 
+			   monsters. 
+	- Tunnel Transport: A large utility vehicle. It can carry resources and vehicles
+			    over any terrain. Resource collection has to be manually enabled
+	- Cargo Carrier: Carries vehicles over water. 
+- Crystal costs has been adjusted to better fit the new abilities of the vehicles.
+- Vehicles are automatically queued to be entered when they are teleported down. 
+- Cancel entering Vehicle command added
+- Miners can carry a resource with them into any vehicle, including Hover Scout.
+- Water vehicles deposit resources on land if possible. Also when teleported up.
+- Water vehicles can be entered and exited if near land at a quite generous distance
+- The vehicle HUD is different from Lego Rock Raiders: Exit/Enter and Load/Unload replace 
+	each other when one is disabled. Also note that in multi-select, the HUD will always
+	default to assuming the "First selected" Vehicle is what should be used. 
+- Vehicles now have a "Carry meter" to show how full their capacity is
+- LASERS
+	- Laser shots consume crystals. Recharge them at a recharge seam.
+	  If no seam is available, be careful with using lasers as the crystals will be PERMANENTLY drained
+	- Crystals are ejected at the laser itself
+	- Lasers have infinite range
+	- The cost of a shot goes up with distance
+	- Lasers have a "free range", wherein the costs do not cost anything. When in this range, the cost meter is "grayed out"
+	- The lasers are balanced so that Mining Laser > LMLC > SMLC > Chrome Crusher, as the CC should only use it as defense.
+	- Hold the mouse for continuous fire (not working for the Mining Laser right now)
+	- 
+
+Notes on vehicle navigation:
+- Vehicles will not be damaged by lava etc directly, only in certain cases
+- Any vehicle can navigate any terrain, but is not allowed to pathfind on some. You may 
+	therefore sometimes see a vehicle go "out of bounds", but this is for its own
+	best and to make navigation robust and predictable. If you stop the vehicle during
+	this "out of bounds" session, you may cause it to become stuck.
+
+
+
+Miners:
+- Training is in! Your miners have to train to do certain tasks:
+	- Explosives Expert: Required to carry and use dynamite. Trained at Level 3 Tool Store
+	- Geologist: NO FUNCTION YET. Trained at Geological Center
+	- Engineer: Required to repair buildings. Trained at Upgrade Station.
+	- Driver: Required to drive most ground vehicles. Trained at Support Station.
+	- Pilot: Required to drive most air vehicles. Trained at Teleport Pad.
+	- Sailor: Required to drive most water vehicles. Trained at Docks.
+- Miners will automatically get the training they need for a job. Just like tools, they will
+  NOT refuse a job even if someone else is better fit for it (i.e. closer AND has training)
+- Commanding a move while carrying a resource will NOT drop the resource anymore.
+- Sandwiches! Use one to heal 25 hp. They can be put in your inventory like any other 
+	Tool, but are consumed on use.
+- Miners can now recharge crystals that have been used to power laser shots
+- New animations!
+	- Enter/Exit animations (not final)
+	- Reversing animation
+	- Dropping resources animation
+	- Walking over rubble (updated)
+
+Buildings:
+- Upgrade effect!
+- The Mining Laser now shoots stuff. It's also OP for now.
+- Buildings menu is now dynamic and has proper, updated tooltips describing what the Buildings do.
+- The Docks only costs 8 Ore, no crystals, and is placable after a LVL 2 Tool Store
+
+New Levels:
+- Explosive action: Bring the Small Digger back to the base! (objective not proper)
+- Run the gauntlet: Help your miner escape and find his way back to the Tool Store (objective not proper)
+- Water lot of fun: cross the river bank!
+- Water Works: Find the missing miners amidst a giant sea.
+- Fire 'n' Water: Escape to the safety on the other side of the river before lava engulfs you
+- Search and Rescue: Find the missing Miner before it is too late!
+- Also: Added Tunnel Transport to Frozen Frenzy
+
+Level Editor:
+- New icons
+- Drill tool now shovels one step of rubble if applicable
+- Now saves vehicles, no dummies required. Use the "Lock Vehicle" option if you want.
+- Miners in vehicles are also saved! They will be a dummy actor the next time you 
+	load the level and the vehicles will not be enterable. Note that if you remove 
+	the miner, the vehicle does not automatically forget about it and has to be replaced
+- Vehicles can be hidden in caverns
+- Added "initial resources" to the Objectives menu
+- Moved camera button
+
+Resources:
+- Crystals no longer sink in water and can be collected by any vehicle that reach them.
+  Rapid Rider is a good budget choice for this BUT be sure it can drop them off!
+  Place a Tool Store near the water (will soon add ability to leave resources at the Docks)
+- Seams now spawn resources on a nearby tile instead of directly from the wall, to ensure they can be collected
+
+User Interface:
+- Animated cursor showing (some) possible actions!
+- Hold Ctrl/Shift/Alt to select only Miners/Vehiceles/Buildings. Swappable.
+- Many icons have been upgraded with new icons and voice clips
+- Most menus have now been aligned
+- Added "Build prioritized Power Path" button, 
+	these Power Paths will always be built before everything else (Including Erosion repairs!)
+
+Fixes/Improvements:
+- The world now is properly underground
+- Cancel Electric Fences with C (Dedicated click-button coming)
+- Overhauled the UI and some icons
+- Added some better tooltips
+- Updated troubleshooting
+- All objectives are now "fulfilled forever" by default.
+- Fixed radar image sometimes bugging out (Full feature coming soon enough
+- Fixed miners repairing Electric Fences
+- Fixed miners sometimes not reaching certain positions and getting stuck (with Dynamite especially)
+- Fixed Main Menu not resetting cursor
+- Fixed Tools menu not deselecting actors properly
+- Fixed buildings always spawning at Max HP
+- Fixed Level Objective expanding by 1 row every time you save the level
+- Fixed not being able to save/load maps for any OS
+- A multitude of other bugs fixed
+- Removed one Easter Egg because it's now a feature (driving a Chrome Chrusher by pressing a specific key)
+
+- TODO: Add a custom miner creator
+- TODO: Save miners to file. 
+- TODO: Add a "Level scripting" section in the Level Editor
+- TODO: Add a tutorial
+
+
+
+
+
+
+------------------------------------------------------------------------------
+
+
+
+
+Changelog V0.2.6->0.2.7
+Basically bugfixes...
+
+- All resources are now checked for proper goals before being picked up. This means power paths and buildings
+  are automatically built if accessible, instead of making certain generalizations about how resources are used.
+  > Note, however, that Studs won't be used for Power Paths unless there is a fully upgraded Ore Refinery 
+- Drill icons now stay until the task is finished. 
+  > Note: You can still queue drilling commands for walls that are not reachable yet
+- Reinforcing, Dynamite and drill commands now stack and don't cancel each other.
+- Hopefully increased sound buffer so sound won't restart
+
+- Fixed Erosion not destroying unbuilt Power Paths
+- Fixed Erosion sometimes being immortal
+- Fixed power issue with removing Power Paths
+- Fixed Miners not reaching resources that were too close to walls
+- Fixed Miners abandoning tasks if told to go somewhere before the task was started
+- Fixed miners not getting killed by lava (99.9%, sometimes they walk onto the lava just as it is spawned and it won't get triggered)
+- Fixed miners not being able to shovel certain terrain
+- Fixed "New Building" popups not initializing correctly
+
+That should be every single bug I have recorded so far!
+
+
+Changelog V0.2.5->0.2.6
+- Added "Play Custom Level" to Main Menu: Play levels that other players have shared with ease! Will improve in upcoming releases
+- Added "Lock game speed" setting: If this is off, the game will always start at speed 1
+- On Easier Erosion and Landslides now have their cooldown doubled
+- On Harder, walls will now give 1-4 Ore instead of always giving 4. (mean value 2.5 ore per wall)
+   This is generated by a seed tied to the map data and is consistent between runs.
+   Note: Remember that buildings don't give back Ore on Harder! Things can get really tough in some caverns
+- Opening caverns now give 10 units (Miner-Seconds) of air per tile in the cavern. Should encourage exploration! (will make it a level parameter later)
+- Seams will now "push" resources towards the closest miner so they don't fall down into water/lava on the wrong side as often
+- Miners should now avoid erosion by a certain margin. If this causes any issues, let me know.
+- Made some minor improvements to Oresome: Added shortcuts and fixed an annoying rubble patch 
+
+- Fixed a bug where miners forgot to put their tasks back in the task queues. 
+- Fixed a bug where the Ore Refinery caused miners to go idle
+- Fixed a bug where Erosion did not power off Power Paths
+- Fixed a bug where Power Paths in discovered caverns did not behave properly
+- Fixed the Quick Settings menu sometimes double clicking
+- Fixed landslide minimum being 5, not 4
+- Fixed landslides spawning on corners under very specific conditions
+- Fixed miners sometimes choosing inaccessible drilling approaches. Miners will now always prefer drilling on tiles that are not
+   near buildings or undergoing erosion.
+- Fixed some tooltips
+- Added more random tips
+
+
+Changelog V0.2.4->0.2.5 (Buildings and Bruises Patch 5):
+Performance improvements!
+
+Additions:
+- Added Lava to low-resolution textures! It doesn't move like the original yet, but it should boost your performance on slow PCs.
+- Walls about to be reinforced but turning into corners are now automatically canceled
+- Lowered minimum landslide rate from 6 to 4. More landslides!
+
+Performance:
+- Fixed severe lava performance issues for larger lava maps as well as erosion:
+--- Removed Lava component that caused unnecessary performance drop and mouse "skidding". 
+--- Lava placement is now instant again no matter the map size. The destruction of resources will look slightly worse as a result, but it's worth it.
+--- Fixed severe performance issue where lava on larger maps would stutter the game when Erosion progressed. It is now close-to-instant, previously it was nearly unplayable.
+
+Fixes:
+- Fixed water not being available in high-resolution
+- Fixed (hopefully) resources sometimes spawning in unreachable configurations, especially barriers.
+- Fixed Tool Store spawning too high up in the air to be reachable 
+- Fixed Potato mode locking the screen if enabled from in-game (Thanks @profego#4051 !)
+- Fixed level load failure ruining the currently loaded level
+- Fixed an issue where Edge Panning moved in the wrong directions
+- Fixed some tooltips
+- Fixed Geo Center's teleport-down animation
+- Made cursor smaller = less blurry
+- Changed the Miner jumpsuits to fantastic HD ones! ( by @ZuTheSkunk#4273 )
+
+
+Changelog V0.2.3->0.2.4 (Buildings and Bruises Patch 4):
+- Added free camera option. Experimental, so if you have issues with it right now, that's life
+- Fixed camera escaping the map boundaries
+- Fixed camera sometimes getting stuck in map corners
+- Missed patch note from last changelog: Reduced game size.
+
+Changelog V0.2.2->0.2.3 (Buildings and Bruises Patch 3):
+Changes/Additions:
+- Added reachability check for constructing buildings: Previously they would just stop if the next prioritized building was unreachable
+- Clarified Buildings tooltips to show what has and has not gotten functionality yet
+- Clarified control scheme
+- Added missing tooltip to Building Power Priority button
+- Discovery objectives now work for walls that are not in a cave, meaning you can e.g. put it on a Crystal Seam in the middle of a dirt path
+- Reworked gameplay hotkeys to be dynamic: You can now change them by opening ManicMiners\Config\DefaultInput.ini in notepad and 
+   scrolling to the bottom to change Task bubbles "Key=X" etc. They will get proper in-game remapping functionality in the next 
+   major build.
+
+Fixes:
+- Fixed Erosion Repair and Power Paths playing the teleport-up effect
+- Fixed Ore Refinery leaving Ore floating after destruction. It is now dispensed instead.
+- Fixed issue where camera did not start at desired height
+
+
+Changelog V0.2.1->0.2.2
+Buildings and Bruises Patch 2 :V0.2.2
+Changes/Additions:
+- A miner will now try to reinforce a wall if they can't drill it after clicking. You can hold R to force them to reinforce the wall. Not having a Hammer results in no reinforcing.
+- Resources should now spawn on ground tiles at map start and after opening a cavern
+- Fixing erosion on a Power Path should now properly turn it back into a Power Path
+--- Note: Fixing Erosion on a Power-Path-in-progress will still make it a Power Path. Erosion Repair is thus disabled on those tiles.
+- Landslides now stop if next to Lava/Water (the Lava effect is cool but it tanks performance. Might add back as a Gameplay setting.)
+- Added instructions on how to migrate settings from previous versions
+- Improved cave-opening performance (Like 20-50% depending on the cave structure)
+
+Fixes:
+- Fixed Erosion not eroding power paths properly
+- Fixed Erosion not stopping when not near lava (happened on pre-eroded cavern tiles)
+- Fixed Erosion Repair acting like a building in some instances
+- Fixed shovel markers being left behind on lava
+- Fixed miners sliding like a baws after finishing a Power Path
+- Fixed "Drop resource" not affecting all selected miners
+- Adjusted Erosion at a distance to not look like an explosion
+- Fixed Tool Store having weirdly angled Tool Dispensions
+
+
+Changelog V0.2->V0.2.1
+Fixes:
+- Updated some levels
+- Miners now look for nearby drill orders before they get new tasks
+- Added Biome changer to Level Editor Environment Menu
+- Shovel from landslides is now automatically queued when the landslide is not active anymore
+- Added "Teleport at Start" to buildings in Level Editor. Works only when directly clicked due to complications.
+- Solid Rock can now landslide and be reinforced on "Harder". This only happens when the map maker specifically puts landslides on Solid Rock and will not influence other difficulties. Classic Campaign levels will not have this enabled.
+- Made landslide heavier
+- Enabled ping sound to the Geological Center when powered up
+- Changed the "Discover" objective to be *whatever you want*, without the "Find" prefix. Yes, I'm giving you the power to make "Go kick Rock Monster butt" an objective (when tied to a discover location)
+
+Fixes:
+- Defeated Barriers in a honourable battle of life and death
+- Fixed Erosion not being visible in opened caverns
+- Fixed some erosion tiles not adopting the original texture
+- Fixed Ore Refinery not dropping Ore into the bin. Sloppy.
+- Fixed Power Station sometimes not being reachable
+- Fixed rubble from initial collapsing walls not being shovelable
+- Fixed Building Popup appearing when no building was avaialble
+- Fixed miners locking up when trying to get a tool in a tight space: They will get tools from the inside of the Tool Store now.
+- Fixed Stats menu locking the game
+- Fixed foundations sometimes appearing to float
+- Fixed Forced Restart after Game Experience change removing the cursor
+-Fixed landslides going into water behaving like it's lava
+
+
+Changelog: V0.1->V0.2
+This is a MAJOR update, and it is recommended that you save absolutely nothing from any previous versions and start fresh.
+
+
+New game mechanics:
+- Building power: Collect crystals and see what the buildings can do for you
+- Air meter: Some levels will slowly run out of air, so you better construct a Support Station quickly!
+- Erosion: A flow of lava that spreads mercilessly... Power paths slow it down a lot!
+- Landslides: An unpredictable catastrophe capable of decimating anything that stands right next to it!
+- Reinforcing walls and repairing buildings
+- Tools system
+- HP system
+- Speed modifiers for Power Paths and Rubble
+- Priorities: Tell your miner in what order to do tasks
+- Power priority: Decide in what order buildings should be powered
+- A lot of settings and hotkeys have been added! Please check them out
+- Proper level select screen!
+
+General:
+- Added "Game Experience": Change this if you either want a) The game to be easier b) The game to be harder or c) An experience as close to the original Rock Raiders as possible. Otherwise: Leave it at Normal
+- Reworked the entire Settings menu
+- Added quick hotkeys!
+	- Q: Quick key. 
+		- If a wall is clicked, mark it for drilling. 
+		- If rubble, mark it for shoveling. 
+		- If ground, command a Power Path there
+		- If a building is selected, try to upgrade it
+		- If an unbuilt building is selected, cancel it
+	- E: Explode/Electric. 
+		- If a wall is clicked, send a Dynamite there. 
+		- If any floor tile, place Electric Fence there
+		- If a building: Toggle the power ("Electric")
+	- "Swap Q and E" option is available, for those that want E as the quick option and E as the secondary
+
+	- R: Reinforce. Will be implemented when Reinforcing becomes a thing.
+
+	- C: Cancel. Cancels all drilling of a wall.
+
+	- Escape and Tab quits any menu
+
+- Enabled priorities! They should work completely and you can toggle them on and off. Let me know if you encounter issues
+	- Note: They will still always shovel rubble first if they stand on it. This will possibly change.
+- Added the Air meter! You gotta build enough Support Stations before the air is up!
+- Added visual resource counters.
+- Studs can now be refined from Ore using the Ore Refinery. They can be used to construct buildings efficiently and upgrade buildings. 
+- Note: please set the "setting "Prioritize using Studs or Ore" (when given the choice) to your preferred option.
+- Camera has been updated to fix a bug and now allows for greater freedom
+- Added proper loading screen + Mission Briefing
+- Decreased game size
+
+
+Buildings:
+- Added 6 new buildings!
+	- Docks: Place it by water and it will flex for you really hard
+	- Upgrade Station: Will do fancy animations for now
+	- Ore Refinery: If you have this powered, miners will carry their ore there and make Studs! Studs are then used to construct buildings
+	- Geological Center: Enables the radar. Only uses 1 "Base tile" now
+	- Mining Laser: Standing there, menancingly
+	- Super Teleport: It can teleports miners until Vehicles arrive
+- Added teleport effects and animations
+- Added Power Paths System
+- Enabled Building Power On/Off buttons
+- Building resource requirements now show as holograms
+- Enabled Miner teleportation queue, click the tiny button to empty the queue
+- Added teleport point to the Super Teleport
+- Updated the building icons
+- Enabled building collisions: Miners should be able to walk between most buildings but not through them.
+- Miners now flee from buildings being teleported down
+- Added "How to build" to the Buildings Menu
+- Buildings can now be placed on more sloped ground than before
+- You can multi-select only buildings by holding SHIFT
+
+Miners/AI:
+- Made rotation smooth instead of instant.
+- Tasks are now only accepted if miners can reach them
+- Picking up stuff is only automatic if they can reach a dropoff point or a Power Path. (They need the barriers to build regular buildings)
+- Navigation and task system completely overhauled
+- Selecting a miner now orients them towards your camera
+- Deselecting a miner who is carrying something now re-calculates his dropoff goal
+- Miners now have HP
+- Miners can now carry tools, which are required to perform certain actions
+- Miners can reinforce walls
+- Miners can repair buildings
+
+Resources:
+- Dynamite now gets "recycled" if destroyed instead of simply forgotten
+- Dynamite now gives off a screen shake
+- Dynamite now only spawns for reachable positions
+- Dynamite doesn't roll away from walls anymore
+- Resources now sink in lava/water with a nice animation
+
+World:
+- Added Erosion!
+- Added landslides!
+- Added speed modifiers for Rubble and Power Paths
+
+Interface:
+- Added options+Priorities panel
+- Added Building Power priority panel
+- Added Air meter
+- Added Radar panel
+
+Materials:
+- All brick pieces now have a slightly matte surface to look more realistic.
+
+Level Editor:
+- Many clarifications on how to do things
+- Place walls in rectangle shapes!
+- Placed walls update automatically!
+- The top of walls are now X-rayed by default
+- Added "Flattened" mode: All walls are flattened to the ground
+- Added "Simulate real level" mode: Like a real level, but with the Level Editor cheats. No saving in this mode.
+- Expanded Resource cheat panel
+- Objective: New buildings! (and Electric Fences)
+- Objective: Amount of buildings built (click a building button several times)
+- Objective: Find miner
+- Objective: Find building
+- Objective: Discover a certain position
+- Level data parameters:
+	- initialcrystals:XXX (how many crystals should the level start with)
+	- initialore:XXX (how much oreshould the level start with)
+	- erosionscale:X.XX (erode cooldowns are multiplied by this, if you ever want erosion quicker than 1 second)
+	- Teleport: True for buildings now actually teleports them
+
+
+
+
+Details:
+- Changed Support Station's louvers to air intakes
+- Added effects to the Teleport Pad
+- Building sounds are now only active when the building is powered
+- Added game tips
+- Improved some models and animations
+
+Settings:
+- Menus overhauled
+- Edge Panning toggle
+- Power path update rate
+- Game Experience
+- Right click option: Either deselect or act as left click
+- Individual toggles for voice alerts
+
+- Many more!
+
+
+
+
+Bugfixes:
+- Fixed "Movement is paused when hovering menus"
+- Fixed some arrow pointers getting left behind when clicking miners/buildings
+- Fixed Buildings menu hotkey not resetting Player State
+- Fixed Barriers sometimes failing to place near walls
+- Fixed miners not being able to place resources if they start at their goal
+- Fixed pausing when hovering menus
+- Fixed selecting miners behind the camera
+- No more X-raying walls
+- Fixed tons of other bugs and exploits. Actually, almost every bug there was ever reported
+
+
+Data handling:
+- Updated building's Power Paths to be specified by Integers, not Vectors. If you encounter issues with Building Power Paths when loading a map you've done previously, let me know.
+- Updated the way the camera loads, older levels will need to update it.
+
+Notes and bugs:
+- None so far
