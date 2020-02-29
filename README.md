@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ### Author's note 2019-02-29: The loading is now working again, have fun!
+=======
+### Author's note: Currently an issue with Github replaces the "line endings" makes the Levels not load properly. As soon as this is fixed, probably on my end, I will keep updating this regularly (The latest update here is several months old).  You *can* circumvent this by extracting the Levels zip into ManicMiners/Levels, but the game files are still obsolete here. In the meantime, join the Discord for the latest builds! All links found here: https://trello.com/c/I6FQo76V/61-download-links
+>>>>>>> 7ae7142b75e876eb17d18b5fff838a5bf96547a6
 
 # Manic Miners: The Rock Raiders remake
 Manic Miners is an in-progress complete Lego Rock Raiders remake done in Unreal Engine. Play it for free right here, right now!
