@@ -1,4 +1,4 @@
-### Author's note 2019-02-29: The loading is now working again, have fun!
+### Author's note 2019-02-29: The build is having some issues, please refer to other download sources for now. Links below.
 =======
 
 # Manic Miners: The Rock Raiders remake
