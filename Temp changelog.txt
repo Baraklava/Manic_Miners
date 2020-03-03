@@ -1,0 +1,36 @@
+Changes since last build:
+
+New features:
+- Added "Mangle terrain" in level editor. It randomizes a height offset up or down BUT it is a bit broken right now and will 
+ leave holes in the terrain where chunks intersect. When saved, it will load 100% fine next time though. 
+- Training, tools, vehicle upgrades are now instant in the Level Editor if "Free stuff" is enabled.
+	- As a reminder: Miners riding in vehicles are saved. They can be "re-activated" by loading through "Simulate Real Level"
+- Level editor now has "Free stuff" as a global toggle rather than "Free buildings" only.
+- Buildings menu + air meter + Miner count now gives better feedback of air production. Teleporting down an oxygen-producing now also gives an air boost in the beginning
+- Added link to Map forum on the Custom Level popup
+
+Vehicles:
+- Vehicles now auto-turn a bit quicker by default. This will make them navigate tighter curves at higher speeds
+ but not look as "authentic". Let me know if it gives you any issues.
+- Vehicles now get pushed away from walls slightly
+- In tight spaces, vehicles now turn much quicker
+- Chrome Crusher and Granite Grinder has gotten slight drill buffs to be roughly equal to the LMLC
+- LMLC had its cooldown increased from 2 to 3 seconds by default. It's still very powerful, and mining a bit quicker than the ChCr.
+- Vehicles can now recharge crystals
+- Water vehicles now drop off their resources at the Docks if no other dropoff is found 
+
+Level Editor: 
+- Added vehicles menu to the Level Editor
+
+Fixes:
+- Fixed border sometimes not lining up with the map
+- Fixed some model clipping issues
+- Fixed vehicles "vibrating"
+- Softened cursor point light
+
+Reported bugs:
+- Ore and studs can sometimes randomly be seen floating high above the base
+- Tunnel Transport can't build stuff properly
+- Vehicles slowly "slide" when idle (for 2 seconds at least)
+- Multi-select is notoriously wide for vehicles under certain circumstances. This is an issue with the engine function that I
+	can not meddle with. Will look for a workaround.

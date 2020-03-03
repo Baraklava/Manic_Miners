@@ -1,0 +1,37 @@
+Ctrl+F for any keywords if you want.
+
+
+--- FATAL ERROR at startup ---
+0. Make sure you have proper administrator privileges to run the game.
+1. Add a circumvention to your firewall/antivirus and restart the game
+2. If it still crashes, make sure that your antivirus did not REMOVE any essential files. Sometimes
+  the exe or some .dll files are quarantined. Check the Quarantine/Virus vault or re-download
+  the game, and launch it again while the antivirus is disabled or the circumvention is active.
+3. Update your DRIVERS. Many crashes have so far been fixed with a simple Video card driver update,
+   especially AMD cards. You might have to force an optiona/experimental download to see the latest driver.
+4. Still crashing? Go to https://trello.com/c/I6FQo76V/61-download-links and try the Compatibility check.
+   If that crashes, your computer has an issue with running the engine.
+5. If you are still crashing, you can go to the Discord and ask for help in #troubleshooting, but please
+   be aware that if you crash on startup, the issue has to do with your computer, not the game. Go into the 
+   /ManicMiners/Saved/Crash folder and get the .dump file as well as the .log file. The dump file will tell
+   you exactly what type of error caused the crash when loaded into Microsoft Visual Studio.
+
+
+--- Settings are stuck in a way so I can't run the game! ---
+Delete the folder /Saved in /ManicMiners
+
+
+--- My controls are frozen! ---
+Please report this as a bug and include what menu you were clicking or navigating when it happened.
+
+
+--- I found a bug! ---
+0. Before reporting, can you reproduce it or not? That is, make it happen again with a specific list of actions. 
+   An image and a description of how to make it happen is usually essential for me to fix it. At other times, I 
+   can figure out what's wrong only by reading your problem description, but images are very good.
+1. Check the Trello here if you can find it: https://trello.com/c/ZvVkGxEc/33-bugs-improvements-todo-suggestions
+2. Go to my Discord ( https://discord.gg/8Z7bgv8 ) and check if the bug has been recently reported in #feedbackandbugs. 
+3. If the bug is not there at first glance, report it with as much info as possible such as what speed the game was 
+playing on, what relevant settings you used, what map it occured on and how to reproduce it. 
+
+If the issue only happens ONCE and never again, it might not be worth reporting, but report as you please.

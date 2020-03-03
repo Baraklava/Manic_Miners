@@ -31,6 +31,7 @@ Vehicles:
 				     to use it!
 	- Rapid Rider: A small catamaran that can carry resources over water. Will
 			automatically collect Crystals that have fallen into water.
+			They will be dropped off at a Docks.
 	- Tunnel Scout: A small helicopter that can fly over any terrain. Upgrade it to
 			give it drilling capabilities.
 	
@@ -44,13 +45,13 @@ Vehicles:
 			   Granite Grinder. It also has a weaker laser to defend against 
 			   monsters. 
 	- Tunnel Transport: A large utility vehicle. It can carry resources and vehicles
-			    over any terrain. Resource collection has to be manually enabled
+			    over any terrain.
 	- Cargo Carrier: Carries vehicles over water. 
 - Crystal costs has been adjusted to better fit the new abilities of the vehicles.
 - Vehicles are automatically queued to be entered when they are teleported down. 
 - Cancel entering Vehicle command added
 - Miners can carry a resource with them into any vehicle, including Hover Scout.
-- Water vehicles deposit resources on land if possible. Also when teleported up.
+- Water vehicles deposit resources on land and by the Docks if possible. Also when teleported up.
 - Water vehicles can be entered and exited if near land at a quite generous distance
 - The vehicle HUD is different from Lego Rock Raiders: Exit/Enter and Load/Unload replace 
 	each other when one is disabled. Also note that in multi-select, the HUD will always
@@ -121,6 +122,9 @@ Level Editor:
 - Vehicles can be hidden in caverns
 - Added "initial resources" to the Objectives menu
 - Moved camera button
+- Added Vehicles menu button
+- Replaced "Free buildings" with "Free stuff" toggle
+- Added "Mangle ground" which randomizes the height change in an area
 
 Resources:
 - Crystals no longer sink in water and can be collected by any vehicle that reach them.
