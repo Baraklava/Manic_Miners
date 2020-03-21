@@ -80,7 +80,7 @@ Notes on vehicle navigation:
 Miners:
 - Training is in! Your miners have to train to do certain tasks:
 	- Explosives Expert: Required to carry and use dynamite. Trained at Level 3 Tool Store
-	- Geologist: NO FUNCTION YET. Trained at Geological Center
+	- Geologist: Shows what is behind nearby walls. Trained at Geological Center
 	- Engineer: Required to repair buildings. Trained at Upgrade Station.
 	- Driver: Required to drive most ground vehicles. Trained at Support Station.
 	- Pilot: Required to drive most air vehicles. Trained at Teleport Pad.
@@ -102,6 +102,7 @@ Buildings:
 - The Mining Laser now shoots stuff. It's also OP for now.
 - Buildings menu is now dynamic and has proper, updated tooltips describing what the Buildings do.
 - The Docks only costs 8 Ore, no crystals, and is placable after a LVL 2 Tool Store
+- The Geological Center now properly scans walls
 
 New Levels:
 - Explosive action: Bring the Small Digger back to the base! (objective not proper)

@@ -1,36 +1,38 @@
-Changes since last build:
-
 New features:
-- Added "Mangle terrain" in level editor. It randomizes a height offset up or down BUT it is a bit broken right now and will 
- leave holes in the terrain where chunks intersect. When saved, it will load 100% fine next time though. 
-- Training, tools, vehicle upgrades are now instant in the Level Editor if "Free stuff" is enabled.
-	- As a reminder: Miners riding in vehicles are saved. They can be "re-activated" by loading through "Simulate Real Level"
-- Level editor now has "Free stuff" as a global toggle rather than "Free buildings" only.
-- Buildings menu + air meter + Miner count now gives better feedback of air production. Teleporting down an oxygen-producing now also gives an air boost in the beginning
-- Added link to Map forum on the Custom Level popup
+- Radar is implemented but not very complex yet. Geologists might have to use a Scanner as a tool in the future.
+- Pizzas enabled as a rare sandwich
+- Proper message popups and error messages have been added (to replace printouts) but not complete
+
+
+Level Editor:
+- Fixed trainings/tools not saving/reading properly to file
+- Automated "Update Environment" when heigh editing
+
+Miners:
+- Fixed an idle issue
 
 Vehicles:
-- Vehicles now auto-turn a bit quicker by default. This will make them navigate tighter curves at higher speeds
- but not look as "authentic". Let me know if it gives you any issues.
-- Vehicles now get pushed away from walls slightly
-- In tight spaces, vehicles now turn much quicker
-- Chrome Crusher and Granite Grinder has gotten slight drill buffs to be roughly equal to the LMLC
-- LMLC had its cooldown increased from 2 to 3 seconds by default. It's still very powerful, and mining a bit quicker than the ChCr.
-- Vehicles can now recharge crystals
-- Water vehicles now drop off their resources at the Docks if no other dropoff is found 
+- SMLC now cost 4 crystals and has a 2 second laser cooldown as well
+- LMLC now costs 8 crystals to be on par with Chrome Crusher
+- POSSIBLY fixed Vehicles getting stuck in buildings.
+- Miners now deposit their carrying resource into the vehicle when they enter
+- Fixed wall damage occasionally being double on the final hit: This slightly nerfs some lasers
+    - For instance, SMLC now takes 2 shots to take down Loose Rock, but only 1 after being upgraded. It drills faster than the Small Digger overall
+- Fixed upgrades not saving/reading properly to file
+- Fixed Vehicles being able to jump while being carried
+- Fixed Tunnel Transport spawning its bucket/tipper when 
+- Fixed Cargo Carrier not carrying cargo
+- Fixed instant unload of vehicles when using hotkeys
+- Fixed Vehicles sometimes not abandoning tasks correctly
+- Fixed Vehicles building stuff they've already put resources into once
+- Fixed vehicle leaving behind floating resources
 
-Level Editor: 
-- Added vehicles menu to the Level Editor
+Other:
+- Zooming in a lot is more sensitive now
+- Default installers are included again
+- Fixed ability to teleport multiple buildings 
+- Fixed some issues with map border
 
-Fixes:
-- Fixed border sometimes not lining up with the map
-- Fixed some model clipping issues
-- Fixed vehicles "vibrating"
-- Softened cursor point light
-
-Reported bugs:
-- Ore and studs can sometimes randomly be seen floating high above the base
-- Tunnel Transport can't build stuff properly
-- Vehicles slowly "slide" when idle (for 2 seconds at least)
-- Multi-select is notoriously wide for vehicles under certain circumstances. This is an issue with the engine function that I
-	can not meddle with. Will look for a workaround.
+Prominent issues
+- Large vehicles looks like they "vibrate"
+- There is a distance limit on how far miners/vehicles can pathfind
