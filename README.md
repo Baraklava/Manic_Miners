@@ -1,4 +1,4 @@
-### Author's note 2019-04-09: I've abandoned GitHub as a distribution platform. It might return if Manic Miners eventually goes open-source. For now, you can download the game on itch.io: https://baraklava.itch.io/manic-miners
+### Author's note 2020-04-09: I've abandoned GitHub as a distribution platform. It might return if Manic Miners eventually goes open-source. For now, you can download the game on itch.io: https://baraklava.itch.io/manic-miners
 =======
 
 # Manic Miners: The Rock Raiders remake
